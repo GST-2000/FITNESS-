@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #85c1e9, #8e44ad);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+a{
+    margin-left: 5px;
+    
+}
+body {
+    background-image: url('Images/background.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* This will make the background image fixed when you scroll */
+}
+
+.navbar {
+    margin-bottom: 50px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    border-radius: 8px; /* Rounded edges for aesthetic */
+}
+
+.navbar-brand {
+    font-weight: 600; /* Making the brand name bold */
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #007BFF;
+}
+
+/* New custom button styles */
+.custom-button {
+    background-color: #ffffff; /* Light grey color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Some padding for visual appeal */
+    font-size: 16px; /* Font size */
+    border: none; /* No border */
+    cursor: pointer; /* Cursor pointer */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+    color: rgb(0, 0, 0); /* Text color */
+}
+
+.custom-button:hover {
+    background-color: hsl(267, 9%, 52%); /* Slightly darker on hover */
+}
+
+/* Center the social icons vertically */
+.social-icon {
+    vertical-align: middle;
+    margin-bottom: 12px; /* Adjust this value to move the icons upward */
+}
+
+.card {
+    border: none;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-btns {
+    display: flex;
+    justify-content: center;
+}
+
+.social-btns .btn {
+    margin: 5px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px; /* Vertically center the icon */
+    text-align: center;
+    transition: 0.3s all;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ... other styles ... */
+
+#aboutus {
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    margin-top: 20px; /* Space between the sections */
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+    flex-direction: column; /* Arrange the buttons vertically */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Login button styling */
+.custom-button.login {
+    background: linear-gradient(90deg, #56ab2f, #a8e063); /* Green gradient background */
+    color: rgb(0, 0, 0); /* Text color */
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: not-allowed; /* Change cursor to not-allowed initially */
+}
+
+.custom-button.login:hover {
+    background: linear-gradient(90deg, #3d8e19, #6fbc37); /* Darker green on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+/* Enable the Login button when it's not disabled */
+.custom-button.login:enabled {
+    cursor: pointer; /* Change cursor to pointer when enabled */
+    background: linear-gradient(90deg, #56ab2f, #a8e063); /* Green gradient background */
+    color: white; /* Text color */
+}
+
+/* Sign Up button styling */
+.custom-button.signup {
+    background-color: #4CAF50; /* Example: Green background */
+    color: rgb(0, 0, 0); /* White text color */
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-button.signup:hover {
+    background-color: #45a049; /* Darker green on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+footer {
+    padding: 2rem 0;
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+.custom-button.admin {
+    background: linear-gradient(90deg, #56ab2f, #a8e063); /* Green gradient background */
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #000; /* Text color */
+}
+
+.custom-button.admin:hover {
+    color: white; /* Text color on hover */
+    background: #003a88; /* Blue background on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social-icon {
+    width: 24px;  /* Example size */
+    height: 24px; /* Example size */
+    /* Additional styles (if needed) */
+}
+
+.custom-button.admin {
+    background: linear-gradient(90deg, #56ab2f, #a8e063); /* Green gradient background */
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #000; /* Text color */
+}
+
+.custom-button.admin:hover {
+    color: white; /* Text color on hover */
+    background: #003a88; /* Blue background on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

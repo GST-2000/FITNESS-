@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    line-height: 1.6;
+    color: #000000;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #000000; /* Adjust the color to fit your brand */
+}
+
+.nav-link,
+.navbar-brand {
+    color: #000000 !important;
+}
+
+.nav-link:hover,
+.navbar-brand:hover {
+    color: #000000 !important;
+}
+
+/* Header - Nutrition Plans */
+section.container h2 {
+    color: #000000; /* Match with navbar color */
+    padding-bottom: 15px;
+}
+
+/* Meal Plan Styling */
+.row {
+    margin-bottom: 2rem;
+}
+
+.row img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Text content styling */
+.row h3 {
+    color: #000000; /* Match with navbar color */
+    margin-bottom: 0.5rem;
+}
+
+.row p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+/* Media Queries for Responsive Adjustments */
+@media (max-width: 768px) {
+    .row img {
+        margin-bottom: 1rem;
+    }
+}

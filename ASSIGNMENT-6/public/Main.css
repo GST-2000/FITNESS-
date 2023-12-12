@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+
+}
+
+.carousel-item {
+    height: 900px; /* Set a fixed height */
+}
+
+.carousel-item img {
+    width: 50%;
+    height: 90%;
+    object-fit: cover; /* Crop the image to fill the container */
+}
+
+
+.gallery-content a,
+.gallery-content a:hover,
+.gallery-content a:visited,
+.gallery-content a:focus {
+    color: black;
+    text-decoration: none;  /* Removes underline from links */
+}
+
+/* Ensuring the title and text remain black even on hover */
+.gallery-content a:hover h3,
+.gallery-content a:hover p {
+    color: black;
+}
+
+/* Optional: Add a subtle hover effect for the images */
+.gallery-content .image-container:hover img {
+    opacity: 0.9;
+    transition: opacity .3s ease-in-out;
+}
+
+/* Center content inside the image-container */
+.image-container {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text within the container */
+}
+
+/* Adjust the margin for the caption to add spacing */
+.image-container h3 {
+    margin-top: 10px; /* Adjust the spacing as needed */
+}
+
+
+header a:hover {
+    color: #000000;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light grey background */
+    color: #000000; /* Dark grey text */
+}
+
+.navbar {
+    background-color: #fff; /* White navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+.navbar-brand, .nav-link {
+    font-weight: bold;
+    color: #000000; /* Bootstrap primary blue */
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: #000000; /* Darker blue on hover */
+}
+
+.nav-item.dropdown .dropdown-menu {
+    margin-top: 0; /* Removes gap between navbar and dropdown */
+}
+
+.navbar-nav.ml-auto .nav-item .nav-link {
+    margin-left: 20px; /* Space out nav links */
+}
+
+.container h2 {
+    color: #000000; /* Title color */
+}
+
+footer {
+    background-color: #343a40; /* Bootstrap dark */
+}
+
+footer p {
+    margin-bottom: 0; /* Removes bottom margin for cleaner look */
+}
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    .gallery-content .col-md-4 {
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .gallery-content .col-md-4 {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+}

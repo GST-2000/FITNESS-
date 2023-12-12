@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Fitness Plus</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="icon" type="image/png" href="Images/Fitness+.png">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="navbar-brand" href="#">Fitness+</a>
+        <div class="navbar-right ml-auto"> <!-- Add ml-auto here -->
+            <!-- Add your buttons here -->
+            <a href="home.html">   <button class="custom-button home">Home</button> </a>
+            <a href="subscription.html"> <button class="custom-button subscription">Subscription</button></a> 
+            <a href="Appointment.html"><button class="custom-button appointment">Book Appointment</button></a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto"></ul>
+        </div>
+    </nav>
+    
+    <div class="card" id="signupCard">
+        <div class="card-header text-center">
+            <h2>Sign up to Fitness Plus</h2>
+        </div>
+        
+        <div class="card-body">
+            <form id="signupForm" action="/submit-signup" method="POST" onsubmit="return submitSignUpForm()">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" required>
+                </div>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" name="username" id="username" placeholder="Enter username" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email address:</label>
+                    <input type="email" class="form-control" name="email" id="signupEmail" placeholder="Enter email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPwd">Password:</label>
+                    <input type="password" class="form-control" name="password" id="signupPwd" placeholder="Enter password" required>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="termsCheck" required>
+                    <label class="form-check-label" for="termsCheck">I agree with Fitness Plus Terms of Service, Privacy Policy, and default Notification Settings.</label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block mt-3">Create Account</button>
+            </form>
+            <br>
+            <button type="button" class="btn btn-secondary btn-block" onclick="submitSignUpForm()">Back to Login</button>
+        </div>
+    </div>
+    <script src ="signup.js"></script>
+</body>
+</html>

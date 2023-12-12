@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments List</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="appointments.css">
+    <link rel="icon" type="image/png" href="Images/Fitness+.png">
+    <!-- Bootstrap Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body class="bg-light">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a class="navbar-brand" href="#">Fitness+</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto"></ul>
+        </div>
+    </nav>
+
+    <h1>Appointments List</h1>
+    <table id="appointments-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Date</th>
+                <th>Service</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Appointments will be loaded here -->
+        </tbody>
+    </table>
+    <div class="button-group text-center mt-4">
+        <button type="button" class="btn btn-primary" id="selectButton" onclick="selectRow()">Select</button>
+        <button type="button" class="btn btn-success" id="acceptButton" onclick="acceptAppointment()">Accept</button>
+        <button type="button" class="btn btn-danger" id="deleteButton" onclick="deleteAppointment()">Delete</button>
+        <button type="button" class="btn btn-secondary" onclick="redirectToDetails()">Back</button>
+    </div>
+
+    <script src="appointments.js"></script>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5">
+        © 2023 Fitness+
+    </footer>
+</body>
+</html>

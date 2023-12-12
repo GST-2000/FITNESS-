@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Subscription Plans</title>
+    <link rel="stylesheet" href="subscription.css">
+    <link rel="icon" type="image/png" href="Images/Fitness+.png">
+</head>
+<body>
+
+<div class="slider">
+    <div class="slides-container">
+        <!-- Slide 1 -->
+        <div class="slide active" id="slide-1">
+            <h2>Weekly</h2>
+            <span class="price">$19.99</span>
+            <ul class="features">
+                <li onclick="toggleList('services-list-1')">+ Service</li>
+                <ul id="services-list-1" class="hidden">
+                    <li>Personal Training</li>
+                    <li>Group Class</li>
+                    <li>Nutrition Consultation</li>
+                </ul>
+                <li onclick="toggleList('addons-list-1')">+ Add-ons</li>
+                <ul id="addons-list-1" class="hidden">
+                    <li>Work Outs</li>
+                    <li>Diet Plans</li>
+                </ul>
+                <li onclick="toggleList('advantages-list-1')">+ Advantages</li>
+                <ul id="advantages-list-1" class="hidden">
+                    <li>consultation</li>
+                    <li>fitness</li>
+                </ul>
+                <li onclick="toggleList('bonuses-list-1')">+ Bonuses</li>
+                <ul id="bonuses-list-1" class="hidden">
+                    <li>free bottle</li>
+                    <li>protein</li>
+                </ul>
+            </ul>
+            <button class="buy-now">Buy now</button>
+        </div>
+<!-- ... [previous code] ... -->
+
+<!-- Slide 2 -->
+<div class="slide" id="slide-2">
+    <h2>Monthly</h2>
+    <span class="price">$49.99</span>
+    <ul class="features">
+        <li onclick="toggleList('services-list-2')">+ Service</li>
+        <ul id="services-list-2" class="hidden">
+            <li>Personal Training</li>
+            <li>Group Class</li>
+            <li>Nutrition Consultation</li>
+        </ul>
+        <li onclick="toggleList('addons-list-2')">+ Add-ons</li>
+        <ul id="addons-list-2" class="hidden">
+            <li>Work Outs</li>
+            <li>Diet Plans</li>
+        </ul>
+        <li onclick="toggleList('advantages-list-2')">+ Advantages</li>
+        <ul id="advantages-list-2" class="hidden">
+            <li>consultation</li>
+            <li>fitness</li>
+        </ul>
+        <li onclick="toggleList('bonuses-list-2')">+ Bonuses</li>
+        <ul id="bonuses-list-2" class="hidden">
+            <li>free bottle</li>
+            <li>protein</li>
+        </ul>
+    </ul>
+    <button class="buy-now">Buy now</button>
+</div>
+
+<!-- Slide 3 -->
+<div class="slide" id="slide-3">
+    <h2>Yearly</h2>
+    <span class="price">$99.99</span>
+    <ul class="features">
+        <li onclick="toggleList('services-list-3')">+ Service</li>
+        <ul id="services-list-3" class="hidden">
+            <li>Personal Training</li>
+            <li>Group Class</li>
+            <li>Nutrition Consultation</li>
+        </ul>
+        <li onclick="toggleList('addons-list-3')">+ Add-ons</li>
+        <ul id="addons-list-3" class="hidden">
+            <li>Work Outs</li>
+            <li>Diet Plans</li>
+        </ul>
+        <li onclick="toggleList('advantages-list-3')">+ Advantages</li>
+        <ul id="advantages-list-3" class="hidden">
+            <li>consultation</li>
+            <li>fitness</li>
+        </ul>
+        <li onclick="toggleList('bonuses-list-3')">+ Bonuses</li>
+        <ul id="bonuses-list-3" class="hidden">
+            <li>free bottle</li>
+            <li>protein</li>
+        </ul>
+    </ul>
+    <button class="buy-now">Buy now</button>
+</div>
+
+<!-- ... [rest of your code] ... -->
+
+
+    <!-- Navigation dots -->
+    <div class="navigation-dots">
+        <div class="dot active" onclick="currentSlide(1)"></div>
+        <div class="dot" onclick="currentSlide(2)"></div>
+        <div class="dot" onclick="currentSlide(3)"></div>
+    </div>
+</div>
+
+<script src="subscription.js"></script>
+</body>
+</html>

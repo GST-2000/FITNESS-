@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('Images/background.webp'); /* Ensure this path is correct */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Minimum height of viewport */
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 24px;
+    color: #333;
+}
+
+.navbar-brand:hover {
+    color: #007BFF;
+}
+
+/* Table styles */
+#profiles-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: white; /* Solid white background for the table */
+}
+
+#profiles-table th, #profiles-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    background-color: white; /* Solid white background for each cell */
+}
+
+#profiles-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#profiles-table tr:hover {
+    background-color: #ddd;
+}
+
+/* Footer styles */
+footer {
+    padding: 2rem 0;
+    background-color: #343a40;
+    color: #f8f9fa;
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+.centered-title {
+    text-align: center;
+    color: white; /* Make the text color white */
+    font-weight: bold; /* This is usually the default for h1, but added for clarity */
+}
+.back-button {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}

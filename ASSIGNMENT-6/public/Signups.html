@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Information</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Signups.css">
+    <link rel="icon" type="image/png" href="Images/Fitness+.png">
+</head>
+<body class="bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a class="navbar-brand" href="#">Fitness+</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto"></ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <h1 class="centered-title">SIGNUPS</h1>
+        <form action="/delete-user" method="post">
+        <table id="signup-table">
+            <thead>
+                <tr>
+                    <th>NAME</th>
+                    <th>USERNAME</th>
+                    <th>EMAIL</th>
+                    <th>PAASWORD</th>
+                    <!-- Add more columns if necessary -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be inserted here -->
+            </tbody>
+        </table>
+        <div class="button-container">
+            <button type="button" class="btn custom-button select" onclick="selectRow()">Select</button>
+            <button type="button" class="btn custom-button delete" onclick="deleteUser()">Delete</button>
+            <button type="button" class="btn custom-button back" onclick="window.location.href='Details.html';">Back</button>
+
+        </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5">
+        © 2023 Fitness+
+    </footer>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="Signups.js"></script>
+</body>
+</html>

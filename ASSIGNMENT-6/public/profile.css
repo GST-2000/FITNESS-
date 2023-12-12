@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    background-image: url('bggggfinal.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa; /* or the background used in other pages */
+}
+
+button {
+    padding: 10px;
+    background-color: #4d6c8d;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;}
+
+.button:hover {
+        background-color: #45a049; 
+    }
+input, textarea {
+    margin-bottom: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+.profile-info p {
+    font-size: 1.1rem;
+    color: #666;
+    /* Additional styling as needed */
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.button.signup:hover {
+    color: white;
+    background: #768ba7;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

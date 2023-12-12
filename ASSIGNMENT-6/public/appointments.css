@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+html, body {
+    height: 100%; /* Ensure html and body cover full height */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('background.webp'); /* Make sure this path is correct */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column; /* Organize content in a column */
+}
+
+.navbar {
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #007BFF;
+}
+
+.container {
+    max-width: 90%;
+    margin: auto;
+    padding: 20px;
+    flex: 1; /* Allow container to fill available space */
+}
+
+.table {
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Space before the 'Back' button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.back-button {
+    background-color: #6c757d; /* Bootstrap's gray color */
+    color: white;
+    border-radius: 5px;
+    padding: 10px 40px; /* Increased padding for wider appearance */
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Center the button */
+    margin: 0 auto; /* Center the button horizontally */
+    width: 50%; /* Adjust width as necessary */
+}
+
+.back-button:hover {
+    background-color: #5a6268; /* Slightly darker shade on hover */
+}
+
+footer {
+    padding: 2rem 0;
+    background-color: #343a40;
+    color: #f8f9fa;
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+.selected {
+    background-color: #f0f0f0; /* Light grey to indicate selection */
+}

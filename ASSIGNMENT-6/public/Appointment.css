@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    background-image: url('bggggfinal.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header a {
+    color: #000000;
+}
+
+/* Main Content */
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+main h2 {
+    color: #000000;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form .form-group {
+    margin-bottom: 1rem;
+}
+
+form label {
+    color: #000000;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+/* Button Styling */
+form button {
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text color */
+    border: 1px solid #ffffff; /* White border */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+form button:hover {
+    background-color: #a9a9a9; /* Darkgrey background on hover */
+    color: white; /* White text color on hover */
+}
+
+/* Footer Styling */
+footer {
+    padding: 2rem 0;
+    background-color: #343a40;
+    color: #f8f9fa;
+    text-align: center;
+}
+
+/* Navbar Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.nav-brand {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links ul li {
+    margin-left: 20px;
+}
+
+.nav-links ul li a {
+    color: #000000;
+    text-decoration: none;
+    background-color: #ffffff; /* White background */
+    border: 1px solid #ffffff; /* White border */
+    padding: 5px; /* Padding for better appearance */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav-links ul li a:hover {
+    background-color: #a9a9a9; /* Darkgrey background on hover */
+    color: white; /* White text color on hover */
+}
+
+#email-message {
+    color: red;
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    main h2 {
+        font-size: 2rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 767px) {
+    main h2 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    main h2 {
+        font-size: 2.4rem;
+    }
+}

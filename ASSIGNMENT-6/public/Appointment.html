@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - Fitness+</title>
+    <link rel="stylesheet" href="appointment.css">
+    <link rel="icon" type="image/png" href="Images/Fitness+.png">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#home.html" class="font-weight-bold"></a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Adjust navbar classes as needed -->
+            <a href="home.html" class="navbar-brand">Fitness+</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto"> <!-- Aligns links to the right -->
+                    <li class="nav-item"><a href="home.html#overview" class="nav-link">Overview</a></li>
+                    <li class="nav-item"><a href="home.html#about" class="nav-link">About Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h2>Book an Appointment</h2>
+                <form action="/submit-appointment" method="post" id="appointment-form" onsubmit="return submitAppointmentForm()">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                        <small id="email-message" class="form-text text-muted"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Preferred Date:</label>
+                        <input type="date" id="date" name="date" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Select Service:</label>
+                        <select id="service" name="service" class="form-control">
+                            <option value="">--Select a service--</option>
+                            <option value="personal_training">Personal Training</option>
+                            <option value="group_class">Group Class</option>
+                            <option value="nutrition_consultation">Nutrition Consultation</option>
+                        </select>
+                        <small id="service-info" class="form-text text-muted"></small>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Book Appointment</button>
+                    <div id="loading" style="display: none;">Loading...</div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center mt-5">
+            <p>Contact us: info@fitnessplus.com</p>
+            <p>Follow us on social media: [Social Media Links]</p>
+            <p>&copy; 2023 Fitness+. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="appointment.js"></script>
+    <script src="server.js"></script>
+
+</body>
+</html>

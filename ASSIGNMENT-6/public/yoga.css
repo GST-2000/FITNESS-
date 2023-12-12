@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    line-height: 1.6;
+    color: #000000;
+}
+
+/* Yoga and Pranayama Section Styling */
+.section-header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.yoga-pose,
+.pranayama-technique {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.yoga-pose img,
+.pranayama-technique img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Text description beside the image */
+.yoga-pose .description,
+.pranayama-technique .description {
+    flex: 1;
+    padding: 0 20px;
+}
+
+/* Improvements for smaller screens */
+@media (max-width: 768px) {
+    .yoga-pose,
+    .pranayama-technique {
+        flex-direction: column;
+    }
+
+    .yoga-pose img,
+    .pranayama-technique img {
+        margin-bottom: 20px;
+    }
+}
+
+/* Footer Styling */
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Adjustments for Nav Bar */
+.navbar-light .navbar-nav .nav-link {
+    color: #000000;
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: #111;
+}
+
+/* Hover effect for nav bar links */
+.navbar-nav .nav-item:hover .nav-link {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Button Basic Style */
+.nav-link {
+    color: white; /* Text color */
+    background-color: #ffffff; /* Primary button color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for better sizing */
+    margin: 0 5px; /* Spacing between buttons */
+    border: 1px solid #ffffff; /* White border */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    font-weight: bold; /* Bold text */
+}
+
+/* Button Hover Effect */
+.nav-link:hover, .nav-link:focus {
+    color: darkgrey; /* Text color on hover */
+    background-color: white; /* Background color on hover */
+    border: 1px solid #ffffff; /* Maintains white border on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+
+/* Active Button Style */
+.nav-item.active .nav-link {
+    background-color: #ffffff; /* White background for active button */
+    color: darkgrey; /* Text color for active button */
+    border-color: #ffffff; /* White border for active button */
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-link {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}

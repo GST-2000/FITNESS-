@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Images/Fitness+.png">
+</head>
+<body class="bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a class="navbar-brand" href="#">Fitness+</a>
+        <div class="navbar-right ml-auto"> <!-- Add ml-auto here -->
+            <!-- Add your buttons here -->
+            <a href="home.html">   <button class="custom-button home">Home</button> </a>
+            <a href="subscription.html"> <button class="custom-button subscription">Subscription</button></a> 
+            <a href="Appointment.html"><button class="custom-button appointment">Book Appointment</button></a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto"></ul>
+        </div>
+    </nav>
+
+    <!-- Alert -->
+    <div class="alert alert-success text-center mt-3" role="alert" id="successAlert" style="display:none;">
+        Successfully logged in!
+    </div>
+
+    <!-- Container -->
+    <!-- Container -->
+    <div class="container">
+        <!-- Row -->
+        <div class="row justify-content-center">
+            <!-- Column -->
+            <div class="col-md-4 mt-5">
+                <div class="card" id="loginCard">
+                    <!-- Card Header -->
+                    <div class="card-header text-center">
+                        <h2>Login</h2>
+                    </div>
+                    <!-- Card Body -->
+                    <div class="card-body">
+                        <form action="/login" method="post">
+                            <div class="form-group">
+                                <label for="email">Email address:</label>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd">Password:</label>
+                                <input type="password" class="form-control" name="password" id="pwd" placeholder="Enter password">
+                            </div>
+                            <div class="button-container">
+                                <button type="submit" class="custom-button login" id="loginBtn" onclick="submitLoginForm()">Login</button>
+                            </div>
+                            <button type="button" class="custom-button signup" onclick="redirectTosignUp()">Signup</button>
+                            <button type="button" class="custom-button admin" onclick="location.href='admin.html'">ADMIN</button>
+                            
+                        </form>
+                    </div>
+                    <!-- Card Footer -->
+                    <div class="card-footer text-center">
+                        <div class="social-btns">
+                            <a href="#" class="btn btn-primary mr-1">
+                                <img src="Images/facebook-icon.png" alt="Facebook" class="social-icon">
+                            </a>
+                            <a href="#" class="btn btn-info mr-1">
+                                <img src="Images/twitter.png" alt="Twitter" class="social-icon">
+                            </a>
+                            <a href="#" class="btn btn-danger">
+                                <img src="Images/google.png" alt="Google" class="social-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Terms of Service -->
+    <div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="termsModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="termsModalLabel">Terms of Service</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Your terms of service content goes here.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Other content -->
+
+    <!-- Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src ="login.js"></script>
+</body>
+</html>

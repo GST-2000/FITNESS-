@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Details.css"> <!-- Link to your Details.css file -->
+    <link rel="icon" type="image/png" href="Images/Fitness+.png">
+</head>
+<body class="bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a class="navbar-brand" href="#">Fitness+</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto"></ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <h2 class="text-center">Admin Dashboard</h2>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-4 text-center">
+                <button type="button" class="btn btn-primary btn-lg mb-3" onclick="window.location.href='Users.html'">Users</button>
+                <button type="button" class="btn btn-secondary btn-lg mb-3" onclick="window.location.href='appointments.html'">Appointments</button>
+                <button type="button" class="btn btn-success btn-lg mb-3" onclick="window.location.href='Signups.html';">Sign Ups</button><br>
+                <button type="button" class="btn btn-danger btn-lg" onclick="window.location.href='Admin.html';">Logout</button> <!-- New Logout button -->
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5">
+        © 2023 Fitness+
+    </footer>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

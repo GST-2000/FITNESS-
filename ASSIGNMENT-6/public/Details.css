@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+html, body {
+    height: 100%; /* Make sure html and body cover full height */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('Images/background.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column; /* Organize content in a column */
+}
+
+.navbar {
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #007BFF;
+}
+
+/* Adjust the container width */
+.container {
+    max-width: 90%; 
+    margin: auto;
+    padding: 20px;
+    flex: 1; /* Flex container to fill available space */
+}
+.custom-button, .admin-dashboard-button, .home-button, .logout-button {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px 40px; /* Increased padding for wider appearance */
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+}
+
+.custom-button:hover {
+    background-color: hsl(267, 9%, 52%);
+}
+
+.admin-dashboard-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.admin-dashboard-button:hover {
+    background-color: #0056b3;
+}
+
+.home-button, .logout-button {
+    background-color: #28a745; /* Green for Home */
+    color: white;
+}
+
+.home-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.logout-button {
+    background-color: #dc3545; /* Red for Logout */
+}
+
+.logout-button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+.social-icon {
+    vertical-align: middle;
+    margin-bottom: 12px;
+}
+
+.card {
+    border: none;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-btns .btn {
+    margin: 5px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    transition: 0.3s all;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+footer {
+    padding: 2rem 0;
+    background-color: #343a40;
+    color: #f8f9fa;
+}

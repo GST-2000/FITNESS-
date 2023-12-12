@@ -1,0 +1,59 @@
+.admin-container {
+    /* Container styles */
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    width: 80%; /* Adjust the width of the container as needed */
+    max-width: 600px; /* Set a maximum width if desired */
+    padding: 20px;
+    margin-top: 203px; /* Adjust top gap as needed */
+    margin-bottom: 203px; /* Adjust bottom gap as needed */
+    border: 1px solid #ccc; /* Optional: Add a border for visualization */
+    background-color: white; /* Set container background to white */
+}
+
+body {
+    background-image: url('Images/background.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+}
+
+.form-container {
+    /* Form container styles */
+    background-color: #f8f9fa;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form-container h2 {
+    /* Form heading styles */
+    color: #333;
+    text-align: center;
+}
+
+input[type="email"], input[type="password"], input[type="text"] {
+    /* Input field styles */
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.btn{
+    /* Button styles */
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block; /* Set button to block */
+    margin: 10px auto; /* Center button horizontally */
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}

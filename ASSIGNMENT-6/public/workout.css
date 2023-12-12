@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: #000000;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    color: #000000;
+}
+
+.nav-link:hover {
+    color: #080808;
+}
+.navbar .navbar-nav .nav-link {
+    color: #000000; /* Ensures black color */
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #080808; /* Slightly darker on hover */
+}
+
+
+/* Main Content Styles */
+.container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 2rem;
+    color: #080808;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #000000;
+}
+
+/* Workout Section Styles */
+.workout-section {
+    margin-bottom: 30px;
+}
+
+.workout-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.25rem;
+}
+
+.workout-section h4 {
+    margin-top: 15px;
+    color: #000000;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 1.5rem 0;
+    margin-top: 30px;
+}
+
+.footer a {
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #f8f9fa;
+    text-decoration: none;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .workout-section img {
+        margin-bottom: 15px;
+    }
+}
+
+/* Hover Effects */
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+/* Utilizing Bootstrap Spacing Utilities for Quick Layout Adjustments */
+.my-5 {
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+}
+
+.mb-4, .my-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.mt-2, .my-2 {
+    margin-top: 0.5rem !important;
+}
+
+/* Adjust Font Sizes for Different Elements */
+.small-text {
+    font-size: 0.8rem;
+}

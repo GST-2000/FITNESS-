@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+
+}
+body {
+    background-image: url('Images/background.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* This will make the background image fixed when you scroll */
+}
+
+header {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header a {
+    color: #000000;
+}
+
+.main-content h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+}
+
+#overview {
+    padding: 2rem 0;
+}
+
+#overview h2 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+#overview p {
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+/* Navigation link hover effect */
+nav a:hover {
+    background-color: #9299a0; /* Light grey color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px; /* Some padding for visual appeal */
+}
+
+#aboutus {
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    margin-top: 20px; /* Space between the sections */
+}
+
+
+footer {
+    padding: 2rem 0;
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+footer video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: for rounded corners */
+}
+
+/* Responsive Video */
+@media (max-width: 576px) {
+    .main-content h1 {
+        font-size: 2rem; /* Smaller font size on extra-small devices */
+    }
+
+    footer video {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+        align-items: right;
+    }
+
+    header nav {
+        width: 100%;
+        text-align: right;
+    }
+
+    header nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .main-content h1 {
+        font-size: 2.2rem; /* Adjusted font size for small devices */
+    }
+}
+
+@media (max-width: 992px) {
+    .main-content h1 {
+        font-size: 2.4rem; /* Slightly smaller font for medium devices */
+    }
+}
+
